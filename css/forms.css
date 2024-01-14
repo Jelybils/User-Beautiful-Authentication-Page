@@ -1,0 +1,135 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #3F4C77;
+}
+
+.form-wrapper {
+    width: 340px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #201a30;
+    animation: 2s form-loading-animation;
+    box-shadow: 0 14px 28px #00000040, 0 10px 10px #00000038;
+}
+
+.form-title {
+    color: #a69fb8;
+    text-align: center;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.input-wrapper {
+    margin: 5px 0;
+    position: relative;
+}
+
+.input-wrapper input {
+    color: white;
+    font-size: 16px;
+    width: 95%;
+    padding: 10px 0px;
+    margin: auto;
+    display: block;
+
+    border-bottom: 2px solid #3f3a4c;
+}
+
+.input-wrapper.is-active input {
+    transition: border-bottom 0.5s ease;
+    border-bottom: 2px solid #4f4dad;
+}
+
+label {
+    top: 30px;
+    left: 8px;
+    cursor: text;
+    font-size: 16px;
+    color: #737080;
+    position: relative;
+    transition: 0.4s;
+    pointer-events: none;
+    transition-property: top, font-size;
+}
+
+
+.input-wrapper.is-active label {
+    top: 10px;
+    font-size: 14px;
+    color: #4f4dad;
+    transition: 0.5s;
+    transition-property: top, font-size;
+}
+
+#password-viewer-wrapper i {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    color: #737080;
+    left: 305px;
+    bottom: 10px;
+    
+}
+
+#eye-hide-ico {
+    display: none;
+}
+
+.form-button {
+    border: none;
+    width: 95%;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: #4f4dad;
+}
+
+.form-button:hover {
+    background-color: #393879;
+    transition: background-color 0.5s ease;
+}
+
+form .button-container {
+    margin: 38px 0 20px;
+    text-align: center;
+}
+
+.form-link-container {
+    text-align: center;
+}
+
+.form-link-container span {
+    color: #8b849c;
+}
+
+.form-link-container a {
+color:#0f73f5;
+text-decoration: none;
+}
+
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Form loading animation */
+@keyframes form-loading-animation {
+    0% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

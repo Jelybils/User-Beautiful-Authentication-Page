@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Poppins">
+        <script src="https://kit.fontawesome.com/e873c70b60.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/forms.css">
+        <title>Register</title>
+    </head>
+
+    <body>
+        <div class="form-wrapper">
+            <form method="post">
+                <h1 class="form-title">Create Account</h1>
+                
+                <div class="input-wrapper">
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstname" id="firstName">
+                </div>     
+
+                <div class="input-wrapper">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastname" id="lastName">
+                </div> 
+                
+                <div class="input-wrapper">
+                    <label for="userEmail">Email Address</label>
+                    <input type="email" name="email" id="userEmail">
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="userPassword">Create Password</label>
+                    <input type="password" name="password" id="userPassword"  autocomplete="new-password">
+
+                    <div id="password-viewer-wrapper">
+                        <i id="eye-view-ico" class="fas fa-eye"></i>
+                        <i id="eye-hide-ico" class="fas fa-eye-slash"></i>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="new-password">
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="form-button">Register</button>
+                </div>
+
+                <div class="form-link-container">
+                    <span>Already have an account ? <a href="login.html">Sign in</a></span>
+                </div>
+                
+            </form>
+        </div>
+        <script type="text/javascript" src="./js/formStyles.js"></script>
+    </body>
+
+</html>
